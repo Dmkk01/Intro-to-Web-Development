@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Synth Form</title>
+	<script src="Tone-muted.js"></script>
+	<link href="synth.css" rel="stylesheet">
+
+</head>
+<body>
+	<!-- Write your form here -->
+	<form id="synth-form" method="post" action="#">
+	<input type="submit" value="Play" >
+	<input type="button" id="stop" value="Stop"> 
+	<h3> Choose note length </h3>
+	
+		<input type="radio" name="note-length" id="eight-note" value="8n" checked> Eight note
+		<input type="radio" name="note-length" id="quarter-note" value="4n"> Quarter note
+		<input type="radio" name="note-length" id="half-note" value="2n"> Half note
+	
+	<h3> Choose a synth: </h3>
+	<select name="firework" id = "synth-select" >
+		<option value="">-- Choose a synth -- </option>
+		<option value="default-synth">default-synth</option>
+		<option value="membrane-synth">membrane-synth</option>
+		<option value="pluck-synth">pluck-synth</option>
+	</select>
+	
+
+	<h3> Adjust slider to change tempo </h3>
+	Tempo <input type="range" id="tempo" min="1" max="30">
+	
+	
+	<h3> Type in notes to play, separated by a space </h3>
+	<input type="text" id="notes-to-play" value="C4 D4 F4">
+	
+	</form>
+	
+	
+	
+	<!-- This script should be the last element inside <body> -->
+	<script src="synth_form.js"></script>
+</body>
+</html>

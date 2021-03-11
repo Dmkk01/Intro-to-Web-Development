@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project Cookie</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<p>I'd rather have the box be...</p>
+<form method="post" action="/">
+  <select name="color_select">
+    <option value="red" name="color">Red</option>
+    <option value="green" name="color">Green</option>
+    <option value="blue" name="color">Blue</option>
+  </select>
+  <input type="submit" value="submit">
+</form>
+
+<div id="box" class=""></div>
+
+<script>
+  /* Implement color changing functionality here */
+  let cookies = document.cookie.split(';');
+  let color_cookie = cookies[0].split('=');
+  let the_color = color_cookie[1]
+  document.getElementById("box").classList.add(the_color);
+</script>
+</body>
+</html>

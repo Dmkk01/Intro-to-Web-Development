@@ -1,0 +1,37 @@
+/***
+ * Write CSS definitions to this file.
+ * Do not change the HTML file that came in the same package.
+ */
+ div {
+	 border-color: rgb(100,100,100);
+	 border-width: 1px;
+	 border-style: solid;
+	 padding: 32px;
+	 margin: 16px;
+	 background-color: rgb(200,200,200);
+ }
+ 
+p { color: rgb(40,20,40); }
+
+p:first-of-type::first-letter {
+  font-size: 36px;
+  color: rgb(255,0,0);
+}
+
+p:first-of-type {
+	font-style: italic;
+	font-style: oblique;
+}
+
+p:last-of-type::after {
+	content: "To be continued..."	;
+	color: rgb(100,100,100);
+}
+
+h1 { color: black; }
+
+h1::before { 
+	font-variant: small-caps;
+	content: 'Chapter: ';
+}
+

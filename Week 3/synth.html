@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="Tone-muted.js"></script>
+</head>
+<body>
+
+  
+	<form id="note-form" method="post" action="#">
+
+      <select id="note-select">
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="g">G</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+      </select>
+
+      <input type="number" id="octave" min="1" max="10" value="2">
+
+      <input type="button" id="play" value="Play">
+
+    </form>
+  <script src="getPitchedNote.js"></script>
+	<script src="note_form.js"></script>
+</body>
+</html>
